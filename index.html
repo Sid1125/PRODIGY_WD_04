@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siddharth Sinha | Web Developer Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <div class="logo">Siddharth Sinha</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero">
+        <div class="hero-content">
+            <img src="/1707195096429.jpg" alt="Profile Picture" class="profile-pic">
+            <h1>Hi, I'm Siddharth</h1>
+            <p>A passionate web developer creating interactive and engaging web applications.</p>
+            <a href="#projects" class="cta">View My Work</a>
+        </div>
+    </header>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <h2>My Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <h3><a href="https://github.com/Sid1125/LibraryManagementSystem" target="_blank">LMS</a></h3>
+                <p>A Library Management System using Python and MySQL.</p>
+            </div>
+            <div class="project-card">
+                <h3><a href="https://github.com/Sid1125/SUtilBot" target="_blank">SUtilBot</a></h3>
+                <p>A Discord Bot(OUTDATED) built using discord.js(a Node.js module).</p>
+            </div>
+            <div class="project-card">
+                <h3><a href="https://github.com/Sid1125/tindog" target="_blank">TinDog</a></h3>
+                <p>A practice website.</p>
+            </div>
+            <div class="project-card">
+                <h3><a href="https://github.com/stars/Sid1125/lists/prodigyinternship" target="_blank">Prodigy Infotech Internship Tasks</a></h3>
+                <p>Tasks done during my internship at Prodigy Infotech.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skill">
+            <i class="fab fa-html5"></i>
+            <span>HTML</span>
+            <div class="skill-bar">
+                <div class="skill-progress html"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <i class="fab fa-css3-alt"></i>
+            <span>CSS</span>
+            <div class="skill-bar">
+                <div class="skill-progress css"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <i class="fab fa-js-square"></i>
+            <span>JavaScript</span>
+            <div class="skill-bar">
+                <div class="skill-progress js"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <i class="fab fa-python"></i>
+            <span>Python</span>
+            <div class="skill-bar">
+                <div class="skill-progress python"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <i class="fas fa-code"></i>
+            <span>C</span>
+            <div class="skill-bar">
+                <div class="skill-progress c"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <i class="fas fa-code-branch"></i>
+            <span>C++</span>
+            <div class="skill-bar">
+                <div class="skill-progress cpp"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <i class="fas fa-database"></i>
+            <span>MySQL</span>
+            <div class="skill-bar">
+                <div class="skill-progress mysql"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <i class="fas fa-database"></i>
+            <span>MongoDB (Basics)</span>
+            <div class="skill-bar">
+                <div class="skill-progress mongodb"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <i class="fas fa-paint-brush"></i>
+            <span>Basic Graphic Designing</span>
+            <div class="skill-bar">
+                <div class="skill-progress graphic-design"></div>
+            </div>
+        </div>
+    </section>
+    
+    
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <form id="contact-form">
+            <input type="text" name="from_name" placeholder="Your Name" required>
+            <input type="email" name="from_email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+            <div id="form-message" class="form-message"></div>
+        </form>        
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Siddharth Sinha. All Rights Reserved.</p>
+    </footer>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script>
+    (function() {
+        emailjs.init("fBJaEm5XPoetPnNuH");
+    })();
+</script>
+</body>
+</html>
